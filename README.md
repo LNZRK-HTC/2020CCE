@@ -33,3 +33,38 @@ int main()
 	printf("%d\n",r);
 }
 ```
+```c
+#include <stdio.h>
+int main()
+{
+	int a[10];
+	int ans=0;
+	for(int i=0;i<10;i++)//陣列是從0~9
+	{
+		scanf("%d",&a[i]);
+	}
+	for(int j=0;j<10;j++)
+	{
+		if(a[j]%3==0)
+		{
+			ans+=1;
+		}
+		
+	}
+	printf("%d\n",ans);
+}
+```
+
+```c
+#include <stdio.h>
+int main()
+{
+    int n;
+    scanf("%d",&n);
+    if(n >= 90)printf("A\n");
+    else if(n < 90 && n >= 88)printf("B\n");
+    else if(n < 80 && n >= 60)printf("C\n");
+    else printf("F\n");
+}
+```
+
