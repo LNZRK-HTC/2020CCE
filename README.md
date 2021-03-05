@@ -90,7 +90,7 @@ int main()
 }
 ```
 ## 第二週正課
-指標:利用 int * p 來改變 n1 變數的值，
+指標(* pointer):利用 int * p 來改變 n1 變數的值，
     int * p2 來改變 n3 變數的值
  ```c
  #include <stdio.h>
@@ -106,3 +106,25 @@ int main()
 }
 ```
 ![image](https://user-images.githubusercontent.com/71545492/110059551-643e2b00-7d9f-11eb-9126-62601625c4e9.png)
+
+
+```c
+#include <stdio.h>
+int main()
+{
+    int n[3]={10,20,30};
+    printf("n[0]:%d n[1]:%d n[2]:%d\n",n[0],n[1],n[2]);
+
+    int *p =&n[0];
+    *p=200;
+    printf("n[0]:%d n[1]:%d n[2]:%d\n",n[0],n[1],n[2]);
+
+    int *p2 =&n[2];
+    *p2=300;
+    printf("n[0]:%d n[1]:%d n[2]:%d\n",n[0],n[1],n[2]);
+
+    p2 = p;
+    *p2=400;
+    printf("n[0]:%d n[1]:%d n[2]:%d\n",n[0],n[1],n[2]);
+}
+```
