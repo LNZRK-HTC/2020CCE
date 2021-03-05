@@ -127,6 +127,6 @@ int main()
     *p2=400;
     printf("n[0]:%d n[1]:%d n[2]:%d\n",n[0],n[1],n[2]);
 }
-![week02-3](https://user-images.githubusercontent.com/71545492/110062251-e0d30880-7da3-11eb-8666-d44b2a9f70b7.png)
 
 ```
+![week02-3](https://user-images.githubusercontent.com/71545492/110062251-e0d30880-7da3-11eb-8666-d44b2a9f70b7.png)
