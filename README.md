@@ -89,3 +89,19 @@ int main()
     printf("%d %d\n",a/ans,n/ans);
 }
 ```
+## 第二週正課
+利用 int * p 來改變 n1 變數的值
+    int * p2 來改變 n3 變數的值
+ ```c
+ #include <stdio.h>
+int main()
+{
+    int n1=10,n2=20,n3=30;
+    printf("n1:%d n2:%d n3:%d\n",n1,n2,n3);
+
+    int *p =&n1;
+    *p=200;
+    printf("n1:%d n2:%d n3:%d\n",n1,n2,n3);
+
+}
+```
