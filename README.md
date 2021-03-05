@@ -90,7 +90,7 @@ int main()
 }
 ```
 ## 第二週正課
-利用 int * p 來改變 n1 變數的值
+利用 int * p 來改變 n1 變數的值，
     int * p2 來改變 n3 變數的值
  ```c
  #include <stdio.h>
