@@ -328,3 +328,18 @@ int main()
 	printf("前標:%.1f\n",top);
 }
 ```
+## 第三周正課
+```c
+#include <stdio.h>
+int main()
+{
+    int a[5]={0,10,20,30,40};
+    int *p = &a[2];
+    *p=222;
+
+    p=p+2;
+    *p=666;
+    printf("%d %d %d %d %d",a[0],a[1],a[2],a[3],a[4]);
+}
+```
+![week03-1](https://user-images.githubusercontent.com/71545492/110881697-c22cbe80-831b-11eb-8c54-63a5e0d34a8f.png)
