@@ -3,7 +3,7 @@ int main()
 {
 	int a[10];
 	int ans=0;
-	for(int i=0;i<10;i++)//°}¦C¬O±q0~9
+	for(int i=0;i<10;i++)//Â°}Â¦CÂ¬OÂ±q0~9
 	{
 		scanf("%d",&a[i]);
 	}
