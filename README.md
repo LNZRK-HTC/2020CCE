@@ -396,4 +396,5 @@ int main()
     printf("%d %d %d %d %d",a[0],a[1],a[2],a[3],a[4]);
 }
 ```
-![week03-3](https://user-images.githubusercontent.com/71545492/110885052-1f773e80-8321-11eb-9dc0-67599581a228.png)
+![week03-3](https://user-images.githubusercontent.com/71545492/110885864-919c5300-8322-11eb-89dc-fb53fd66d3b2.png)
+
