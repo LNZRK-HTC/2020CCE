@@ -398,3 +398,16 @@ int main()
 ```
 ![week03-3](https://user-images.githubusercontent.com/71545492/110885864-919c5300-8322-11eb-89dc-fb53fd66d3b2.png)
 
+```c
+#include <stdio.h>
+#include <stdlib.h>
+int a[10];
+int main()
+{
+    int b[10];
+    int *p=(int*)malloc(sizeof(int)*10);
+    return 0;
+}
+
+```
+![week03-4](https://user-images.githubusercontent.com/71545492/110889882-f1e2c300-8329-11eb-9e46-ee5a393556bd.png)
