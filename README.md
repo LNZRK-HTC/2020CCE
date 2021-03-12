@@ -365,6 +365,35 @@ int main()
     *p=555;
     printf("%d %d %d %d %d",a[0],a[1],a[2],a[3],a[4]);
 }
-![week03-2](https://user-images.githubusercontent.com/71545492/110883665-cad2c400-831e-11eb-80b5-b9209c2b0b4a.png)
-
 ```
+![week03-2](https://user-images.githubusercontent.com/71545492/110885005-07072400-8321-11eb-90d1-cb5570189139.png)
+
+```c
+#include <stdio.h>
+int a[5]={0,10,20,30,40};
+void printAll()
+{
+    for(int i=0;i<5;i++)printf("%d ",a[i]);
+    printf("\n");
+}
+int main()
+{
+    printAll();
+    int *p = &a[2];
+    *p=222;
+    printf("p心裡小紙條記的是:%d\n",p);
+
+    printAll();
+    p=p+2;
+    *p=666;
+    printf("p心裡小紙條記的是:%d\n",p);
+
+    printAll();
+    p--;
+    *p=555;
+    printf("p心裡小紙條記的是:%d\n",p);
+
+    printf("%d %d %d %d %d",a[0],a[1],a[2],a[3],a[4]);
+}
+```
+![week03-3](https://user-images.githubusercontent.com/71545492/110885052-1f773e80-8321-11eb-9dc0-67599581a228.png)
