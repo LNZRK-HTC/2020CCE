@@ -411,3 +411,22 @@ int main()
 
 ```
 ![week03-4](https://user-images.githubusercontent.com/71545492/110889882-f1e2c300-8329-11eb-9e46-ee5a393556bd.png)
+
+## 第三周實習課
+進階題：計算陣列的平方值 : 輸入一個整數N，再依序輸入N個整數置於陣列中，計算各元素的平方值，再列出此算出平方值後的陣列。 
+數字範圍：整數N範圍 1 – 10；其他整數1 – 100
+```c
+#include <stdio.h>
+int main()
+{
+	int n;
+	int a[100];
+	scanf("%d",&n);
+	for(int i=1;i<=n;i++)
+	{
+		scanf("%d",&a[i]);
+		printf("%d,",a[i]*a[i]);
+	}
+	printf("\n");
+}
+```
