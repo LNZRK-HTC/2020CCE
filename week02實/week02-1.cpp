@@ -8,7 +8,7 @@ int main()
 		scanf("%d",&a[i]);
 		if(a[i]==0)
 			break;
-			n++;//�p��Ӽ�
+			n++;//­pºâ­Ó¼Æ
 	}
 	for(int i=n-1;i>=0;i--)
 	{
