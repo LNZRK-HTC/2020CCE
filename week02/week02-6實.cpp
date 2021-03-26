@@ -15,7 +15,7 @@ int main()
 	}
 	float avg;
 	avg=(float)ans/n;
-	printf("§¡¼Ğ:%.1f\n",avg);
+	printf("Â§Â¡Â¼Ã:%.1f\n",avg);
 	int r = 0;
 	for(int i=0;i<n;i++)
 	{
@@ -27,5 +27,5 @@ int main()
 	}
 	float top;
 	top=(float)sum/r;
-	printf("«e¼Ğ:%.1f\n",top);
+	printf("Â«eÂ¼Ã:%.1f\n",top);
 }
