@@ -1,5 +1,7 @@
 ## 第七周正課
 
+
+老師的參考網址:https://hackmd.io/@jsyeh/ctutor
 字串排列第二種寫法(第一種詳情請見第五周，下方也有附)
 ```c
 #include <stdio.h>
