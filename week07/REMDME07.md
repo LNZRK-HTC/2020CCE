@@ -34,6 +34,9 @@ int main()
 	}
 }
 ```
+![week07-2](https://user-images.githubusercontent.com/71545492/114123065-24c9a800-9924-11eb-9018-9c6b332fbd9c.png)
+
+
 ```c
 #include <stdio.h>
 #include <string.h>
