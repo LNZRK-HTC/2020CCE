@@ -1,4 +1,6 @@
-## 第八周正課!
+## 第八周正課
+
+字串排列
 ```c
 #include <stdio.h>
 #include <string.h>
@@ -30,6 +32,47 @@ int main()
 ```
 ![week08-1](https://user-images.githubusercontent.com/71545492/114962595-8f876000-9e9d-11eb-917b-f7b4b27c01bf.png)
 ![week08-2](https://user-images.githubusercontent.com/71545492/114962602-91e9ba00-9e9d-11eb-879c-f952e6db45f7.png)
+
+CPE習題  
+(UVA10420) List of Conquests :  
+```c
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+char line[2000][75];
+char other[100];
+int compare(const void *p1,const void *p2)
+{
+	char*s1=(char*)p1;
+	char*s2=(char*)p2;
+	return strcmp(s1,s2);
+}
+int main()
+{
+	int n;
+	scanf("%d",&n);
+	for(int i=0;i<n;i++)
+	{
+		scanf("%s",line[i]);
+		gets (other);
+	}
+	
+	qsort(line,n,75,compare);
+	
+	int ans=1;
+	for(int i=0;i<n;i++)
+	{
+		if(strcmp(line[i],line[i+1])==0)ans++;
+		else
+		{
+			printf("%s %d\n",line[i],ans);
+			ans=1;
+		}
+	}
+}
+```
+![week08-4-1](https://user-images.githubusercontent.com/71545492/114963301-05d89200-9e9f-11eb-8673-37a8eff84fd4.png)
+
 
 ```c
 #include <stdio.h>
