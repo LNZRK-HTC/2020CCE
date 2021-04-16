@@ -151,3 +151,52 @@ int main()
 ![week08-3](https://user-images.githubusercontent.com/71545492/114962645-a6c64d80-9e9d-11eb-9258-63719bf3e381.png)
 ![week08-4](https://user-images.githubusercontent.com/71545492/114962650-a928a780-9e9d-11eb-807c-f175ecb34b1e.png)
 
+
+```c
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+char tree[1000000][35];//怕字串後面\0沒有準備好，會出錯，所以開大點30->35
+int compare(const void *p1,const void *p2)
+{
+	return strcmp((char*)p1,(char*)p2);
+}
+int main()
+{
+	int T;//測試資料有幾筆
+	scanf("%d\n\n",&T);
+	//       會把後面2個跳行吃掉
+	int N=0;
+	for(int i=0;   ;i++)
+	{
+		char*now=gets(tree[i]);//一次讀一整行，用gets(),不能用scanf
+		if(now==NULL)//讀入失敗
+		{
+			N=i;
+			break;//離開迴圈
+		}
+		if(strcmp(tree[i],"")==0)//空白行
+		{
+			N=i;
+			break;//離開迴圈
+		}
+	}
+	
+	qsort(tree,N,35,compare);
+	
+	printf("%s ",tree[0]);
+	int ans=1;//從1開始數(又有新的1筆囉)
+	for(int i=0;i<N-1;i++)
+	{
+		if(strcmp(tree[i],tree[i+1])!=0)//不同時
+		{
+			printf("%.4f\n",100*ans/(float)N);
+			printf("%s ",tree[i+1]);
+			ans=1;//小心，要重新從1開始數(又有新的一筆囉)
+		}
+		else ans++;//相同時
+	}
+	printf("%.4f\n",100*ans/(float)N);
+}
+```
+![week08-7](https://user-images.githubusercontent.com/71545492/114969404-e0518580-9eaa-11eb-902c-8dc589dc3b12.png)
