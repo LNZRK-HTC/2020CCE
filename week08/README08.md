@@ -33,8 +33,44 @@ int main()
 ![week08-1](https://user-images.githubusercontent.com/71545492/114962595-8f876000-9e9d-11eb-917b-f7b4b27c01bf.png)
 ![week08-2](https://user-images.githubusercontent.com/71545492/114962602-91e9ba00-9e9d-11eb-879c-f952e6db45f7.png)
 
+另一種寫法
+```c
+#include <stdio.h>
+#include <string.h>
+char line[100][10];
+int main()
+{
+	int n;
+	scanf("%d",&n);
+	for(int i=0;i<n;i++)
+	{
+		scanf("%s",line[i]);
+	}
+	
+	char temp[10];
+	for(int i=0;i<n;i++)
+	{
+		for(int j=i+1;j<n;j++)
+		{
+			if(strcmp(line[i],line[j])>0)
+			{
+				strcpy(temp,line[i]);
+				strcpy(line[i],line[j]);
+				strcpy(line[j],temp);
+			}
+		}
+	}
+	for(int i=0;i<n;i++)
+	{
+		printf("%s\n",line[i]);
+	}
+} 
+
+```
+
 CPE習題  
 (UVA10420) List of Conquests :  
+第一種寫法
 ```c
 #include <stdio.h>
 #include <string.h>
@@ -73,7 +109,7 @@ int main()
 ```
 ![week08-4-1](https://user-images.githubusercontent.com/71545492/114963301-05d89200-9e9f-11eb-8673-37a8eff84fd4.png)
 
-
+第二種寫法
 ```c
 #include <stdio.h>
 #include <string.h>
