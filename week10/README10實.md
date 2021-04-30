@@ -44,6 +44,52 @@ int main()
 
 (SOIT107_ADVANCE_008_C_C++) 進階題：函數判斷質數 : 設計一個函數prime(n)，可以判斷n是否為質數：如果是質數則回傳1，否則回傳0。
 ```c
+#include <iostream>
+using namespace std;
+.....
+int main(){
+  int n;cin>>n;
+  cout<<"["<<prime(n)<<"]";
+  return 0;
+}
+/* 上方 C++ 的 main 函數 等價於 下方 C 的 main 函數
+int main(void){
+    int n;
+    scanf("%d", &n);
+    printf("[%d]", prime(n));
+    return 0;
+}
+*/
+```
+
+```c
+#include <stdio.h>
+#include <iostream>
+using namespace std;
+int prime(int n)
+{
+	int i;
+	for(i=2;i<n;i++)
+	{
+		if(n%i==0)break;
+	}
+		if(i==n)return 1;//是質數
+		else return 0;
+}
+int main(){
+  int n;cin>>n;
+  cout<<"["<<prime(n)<<"]";
+  return 0;
+}
+/* 上方 C++ 的 main 函數 等價於 下方 C 的 main 函數
+int main(void){
+    int n;
+    scanf("%d", &n);
+    printf("[%d]"reertgergr, prime(n));
+    return 0;
+}
+*/
+
 
 ```
 
