@@ -20,6 +20,7 @@ char line[1000];
         printf("========分隔線========\n");
 	}
 }
+```
 ![week10-1](https://user-images.githubusercontent.com/71545492/116647369-f7b16800-a9ac-11eb-8e50-2211e58473d6.png)```
 
 ```c
