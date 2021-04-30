@@ -105,21 +105,6 @@ int main()
 	}
 }
 ```
-#include <stdio.h>
-int main()
-{
-	int n,a[10],ans=1;
-	scanf("%d",&n);
-	printf("Enter the number of values to be processed: ");
-	for(int i=0;i<n;i++)
-	{
-		printf("Enter a value: ");
-		scanf("%d",&a[i]);
-		ans*=a[i];
-	}
-	printf("Product of the %d values is %d",n,ans);
-	
-}
 (SOIT107_Base_008) 基礎題：將一連串整數相乘 : 請撰寫一個會將一連串整數相乘的程式。  
 假定以scanf所讀取的第一個整數，是用於指出接下來要輸入的數值的個數。  
 你的程式每執行一次scanf，必須只能讀取一個數值。  
