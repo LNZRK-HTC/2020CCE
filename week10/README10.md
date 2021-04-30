@@ -228,8 +228,10 @@ int main()
 	}
 }
 ```
-![week10-6](https://user-images.githubusercontent.com/71545492/116647389-01d36680-a9ad-11eb-91e7-cec99bec3af4.png)
-![week6-2](https://user-images.githubusercontent.com/71545492/116647396-04ce5700-a9ad-11eb-9464-25b5210b8e4e.png)
+![week10-6-1](https://user-images.githubusercontent.com/71545492/116654228-5382ed80-a9bb-11eb-9c50-c006468f43e9.png)
+![week10-6-2](https://user-images.githubusercontent.com/71545492/116654245-5847a180-a9bb-11eb-90aa-51fa38bcfea1.png)
+
+
 
 
 
