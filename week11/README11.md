@@ -74,3 +74,19 @@ int main()
 ```
 ![week11-2](https://user-images.githubusercontent.com/71545492/117387795-1ae39680-af1c-11eb-8238-545f5abc790d.png)
 
+```c
+#include <stdio.h>
+struct data
+{
+    int ans;
+    char c;
+};
+struct data box;
+int main()
+{
+    box.ans=1;
+    box.c='A';
+    printf("%c %d\n",box.c,box.ans);
+}
+```
+![week11-3](https://user-images.githubusercontent.com/71545492/117390817-6a789100-af21-11eb-90a1-02b0f998975b.png)
