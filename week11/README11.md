@@ -90,3 +90,22 @@ int main()
 }
 ```
 ![week11-3](https://user-images.githubusercontent.com/71545492/117390817-6a789100-af21-11eb-90a1-02b0f998975b.png)
+
+
+```c
+#include <stdio.h>
+typedef struct data
+{
+    int ans;
+    char c;
+}DATA;
+///struct data box;
+DATA box;
+int main()
+{
+    box.ans=1;
+    box.c='A';
+    printf("%c %d\n",box.c,box.ans);
+}
+```
+![image](https://user-images.githubusercontent.com/71545492/117391487-9b0cfa80-af22-11eb-92a1-47e73843a0d0.png)
