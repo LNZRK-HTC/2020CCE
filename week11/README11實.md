@@ -16,6 +16,23 @@ int main()
 	}
 	printf("%d",ans);
 }
+/*
+#include <stdio.h>
+int main()
+{
+	char line[85];
+	scanf("%s",&line);
+	int i=0,ans=0;
+	while(line[i]!='\0')
+	{	
+		
+		if(line[i]>='0' && line[i]<='9')ans++;
+		i++;
+	}
+	printf("%d",ans);
+}
+
+*/
 ```
 
 (SOIT107_ADVANCE_013_C_C++)   
