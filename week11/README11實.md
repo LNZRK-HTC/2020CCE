@@ -200,6 +200,15 @@ int main()
 	if(n%7==6)printf("5");
 	if(n%7==0)printf("6");
 }
+/*
+#include <stdio.h>
+int main()
+{
+	int a;
+	scanf("%d",&a);
+	printf("%d",(a-1)%7);
+}
+*/
 ```
 
 (SOIT107_Base_014) 基礎題：零錢總額 :   
