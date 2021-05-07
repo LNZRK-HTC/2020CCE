@@ -109,3 +109,53 @@ int main()
 }
 ```
 ![image](https://user-images.githubusercontent.com/71545492/117391487-9b0cfa80-af22-11eb-92a1-47e73843a0d0.png)
+
+
+```c
+#include <stdio.h>
+char line[2000];
+int main()
+{
+	//step01:input:一次1整行，很多一整行
+	for(int t=0;gets(line);t++)
+	{
+		
+		//step02:output:對應印出來
+		if(t>0)printf("\n");
+		printf("blahblahblah\n");
+		printf("blahblahblah\n");
+		printf("blahblahblah\n");
+	}
+}
+```
+![week11-5](https://user-images.githubusercontent.com/71545492/117394788-5f296380-af29-11eb-8297-2843ab4390ce.png)
+
+
+```c
+#include <stdio.h>
+char line[2000];
+int ans[256];//統計有幾個字母 ex.ans[65]=3表示'A'有3次
+int main()
+{
+	//step01:input:一次1整行，很多一整行
+	for(int t=0;gets(line);t++)
+	{
+		for(int i=0;i<256;i++)ans[i]=0;//清乾淨
+		
+		for(int i=0;line[i]!=0;i++)//step04:字串的迴圈
+		{
+			char c= line[i];//step04:第i個字母
+			ans[c]++;//step04:統計到ans[]裡面
+		}
+		
+		
+		//step02:output:對應印出來
+		if(t>0)printf("\n");
+		for(int i=0;i<256;i++)//step05:真的印出來
+		{
+			if(ans[i]>0)printf("%d %d\n",i,ans[i]);
+		}
+	}
+}
+```
+![week11-6](https://user-images.githubusercontent.com/71545492/117394797-62bcea80-af29-11eb-8f3b-798933713910.png)
