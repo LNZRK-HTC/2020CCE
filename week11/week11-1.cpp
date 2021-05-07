@@ -3,7 +3,7 @@ int main()
 {
 	char line[85];
 	scanf("%s",&line);
-
+	
 	int ans=0;
 	for(int i=0;line[i]!='\0';i++)
 	{
@@ -12,3 +12,20 @@ int main()
 	}
 	printf("%d",ans);
 }
+/*
+#include <stdio.h>
+int main()
+{
+	char line[85];
+	scanf("%s",&line);
+	int i=0,ans=0;
+	while(line[i]!='\0')
+	{	
+		
+		if(line[i]>='0' && line[i]<='9')ans++;
+		i++;
+	}
+	printf("%d",ans);
+}
+
+*/
