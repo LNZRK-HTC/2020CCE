@@ -182,3 +182,26 @@ int main()
 }
 ```
 ![week12-5](https://user-images.githubusercontent.com/71545492/118215736-b6d54b00-b4a4-11eb-84da-a40a109cc4cc.png)
+
+```c
+#include <stdio.h>
+int a[10000];
+int main()
+{
+	int N,M;//step01:N,M讀入
+	while(scanf("%d %d",&N,&M)==2)
+	{//step02:input
+		for(int i=0;i<N;i++)
+		{
+			scanf("%d",&a[i]);
+		}
+		//step03:output
+		printf("%d %d\n",N,M);
+		for(int i=0;i<N;i++)
+		{
+			printf("%d\n",a[i]);
+		}
+	}
+}
+```
+![week12-6](https://user-images.githubusercontent.com/71545492/118217639-74157200-b4a8-11eb-97fc-80f3670a31b8.png)
