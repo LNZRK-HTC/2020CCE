@@ -143,3 +143,42 @@ int main()
 }
 ```
 ![week12-4](https://user-images.githubusercontent.com/71545492/118214679-c2c00d80-b4a2-11eb-86e8-f13e08280a54.png)
+
+
+```c
+#include <stdio.h>
+int a[100];
+int main()
+{
+	int T;//step01:input有幾筆
+	scanf("%d",&T);
+	for(int t=0;t<T;t++)
+	{
+		int N;
+		scanf("%d",&N);
+		for(int i=0;i<N;i++)//step02:input到陣列a[i]
+		{
+			scanf("%d",&a[i]);
+		}
+		int ans=0;
+		
+		for(int k=0;k<N-1;k++)
+		{
+			for(int i=0;i<N-1;i++)
+			{
+				if(a[i]>a[i+1])
+				{
+					int temp=a[i];
+					a[i]=a[i+1];
+					a[i+1]=temp;
+					ans++;//又做了一次交換swap
+				}
+			}
+		}
+		
+		//step03:output
+		printf("Optimal train swapping takes %d swaps.\n",ans);
+	}
+}
+```
+![week12-5](https://user-images.githubusercontent.com/71545492/118215736-b6d54b00-b4a4-11eb-84da-a40a109cc4cc.png)
