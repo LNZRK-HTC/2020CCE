@@ -125,7 +125,28 @@ int main()
 (SOIT108_Advance_002B)   
 進階題：三數組合 : 讀入三個 0 - 9 的數字，將其組合成最大的數字，並計算將該數字加1的結果。  
 ```c
-
+#include <stdio.h>
+int main()
+{
+	int a[3],i,temp,j;
+	for(i=0;i<3;i++)
+	{
+		scanf("%d",&a[i]);
+	}
+	for(i=0;i<3;i++)
+	{
+		for(j=i+1;j<3;j++)
+		{
+			if(a[i]<a[j])
+			{
+				temp=a[j];
+				a[j]=a[i];
+				a[i]=temp;
+			}
+		}
+	}
+	printf("%d",a[0]*100+a[1]*10+a[2]+1);
+}
 ```
 
 (SOIT108_Base_001)   
