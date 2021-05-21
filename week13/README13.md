@@ -49,7 +49,6 @@ void draw(){//每秒狂做60次
   int s=second();//秒
   text("Now:" + h + ":" + m + ":" + s  , 100,100);
     //  字串    數  字串  數  字串 數字
-  }
 }
 ```
 ![week13-4](https://user-images.githubusercontent.com/71545492/119075820-06c38d00-ba24-11eb-95e0-ecd1db7a2e42.png)
