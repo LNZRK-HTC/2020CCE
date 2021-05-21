@@ -51,7 +51,7 @@ void draw(){//每秒狂做60次
     //  字串    數  字串  數  字串 數字
 }
 ```
-![week13-4](https://user-images.githubusercontent.com/71545492/119075820-06c38d00-ba24-11eb-95e0-ecd1db7a2e42.png)
+![week13-4](https://user-images.githubusercontent.com/71545492/119077642-3de76d80-ba27-11eb-8a97-d15c584abc3c.png)
 
 ```c
 void setup(){//只做一次設定
