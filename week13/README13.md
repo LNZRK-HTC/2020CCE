@@ -53,3 +53,22 @@ void draw(){//每秒狂做60次
 ```
 ![week13-4](https://user-images.githubusercontent.com/71545492/119075820-06c38d00-ba24-11eb-95e0-ecd1db7a2e42.png)
 
+```c
+void setup(){//只做一次設定
+  size(1024,400);
+  textFont(createFont("標楷體",50));
+}
+void draw(){//每秒狂做60次
+  background(15,162,249);
+  textSize(50);
+  int h=hour();//小時
+  int m=minute();//分鐘
+  int s=second();//秒
+  text("Now:" + h + ":" + m + ":" + s  , 100,100);//現在時間
+    //  字串    數  字串  數  字串 數字
+    int total = h*60*60 + m*60 +s;//總秒數
+    text("總秒數:"+total,100,200);
+}
+```
+![week13-5](https://user-images.githubusercontent.com/71545492/119077523-fb259580-ba26-11eb-8745-9bc62b39c41a.png)
+
