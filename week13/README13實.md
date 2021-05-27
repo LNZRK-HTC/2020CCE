@@ -157,3 +157,65 @@ int main()
 	printf("%d",ans);
 }
 ```
+
+(SOIT108_Base_004)  
+基礎題：判斷座標的象限 : 題目內容：判斷所輸入座標(x,y)的所在象限，(僅考慮在四個象限的情況，不考慮在軸線及原點的情況)。  
+{ex.(1,1)屬第一象限、(-1,1)屬第二象限、(-1,-1)屬第三象限、(1,-1)屬第四象限} 數字範圍：整數 -1000~1000  
+```c
+#include <stdio.h>
+int main()
+{
+	int x,y;
+	scanf("%d%d",&x,&y);
+	
+	if(x>0)
+	{
+		if(y>0)printf("1\n");
+		if(y<0)printf("4\n");
+	}
+	
+	else
+	{
+		if(y>0)printf("2\n");
+		if(y<0)printf("3\n");
+	}
+}
+/*
+#include <stdio.h>
+int main()
+{
+	int x,y;
+	scanf("%d%d",&x,&y);
+	
+	if(x>0)
+	{
+		if(y>0)printf("1\n");
+		else printf("4\n");
+	}
+	
+	else
+	{
+		if(y>0)printf("2\n");
+		else printf("3\n");
+	}
+}
+*/
+```
+
+(SOIT108_Base_005) 基礎題：  
+輸入n (n>0)， 求n之所有因數和 : 輸入n (n>0)， 求 n之所有因數和。  
+{ex. 2之因數為1、2，因數和為因數加總1+2=3} 
+```c
+#include <stdio.h>
+int main()
+{
+	int n,sum=0;
+	scanf("%d",&n);
+	for(int i=1;i<=n;i++)
+	{
+		if(n%i==0)
+		sum+=i;
+	}
+	printf("%d",sum);
+}
+```
