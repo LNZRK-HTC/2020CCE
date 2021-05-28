@@ -50,4 +50,4 @@ void mousePressed(){
   int temp=a[i2]; a[i1]=a[i2]; a[i2]=temp;
 }//交換
 ```
-![week14-3](https://user-images.githubusercontent.com/71545492/119921512-b9559b80-bfa0-11eb-98c8-8c5911ce07aa.png)
+![week14-3](https://user-images.githubusercontent.com/71545492/119921618-e7d37680-bfa0-11eb-9df6-1710fe519073.png)
