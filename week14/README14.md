@@ -47,7 +47,33 @@ void draw(){
 void mousePressed(){
   int i1=(int)random(10);
   int i2=(int)random(10);
-  int temp=a[i2]; a[i1]=a[i2]; a[i2]=temp;
+  int temp=a[i1]; a[i1]=a[i2]; a[i2]=temp;
 }//交換
 ```
-![week14-3](https://user-images.githubusercontent.com/71545492/119921618-e7d37680-bfa0-11eb-9df6-1710fe519073.png)
+![week14-3](https://user-images.githubusercontent.com/71545492/119924372-09832c80-bfa6-11eb-9fd5-02e6d676e9cc.png)
+
+
+```c
+//int a[]={1,2,3,4,5,6,7,8,9,10...寫到49，這樣寫太長
+int []a= new int[49];//Java的陣列宣告好
+void setup(){
+  size(400,200);
+  textSize(30);
+  for(int i=0;i<49;i++)
+  a[i]=i+1;//人類:1//電腦:0
+}
+void draw(){
+  background(#2C9CF0);
+  for(int i=0;i<6;i++){//49只秀6個數
+    text(a[i],i*50,100);
+  }//大樂透，抽獎時會掉下球，49球挑6球
+}
+void mousePressed(){
+  for(int i=0;i<1000;i++){
+    int i1=(int)random(49);
+    int i2=(int)random(49);
+    int temp=a[i1]; a[i1]=a[i2]; a[i2]=temp;
+  }
+}//交換
+```
+![week14-4](https://user-images.githubusercontent.com/71545492/119924343-fec89780-bfa5-11eb-956e-f62aa6fbb923.png)
