@@ -73,3 +73,32 @@ void draw(){
 }//0秒的時候，if()會進去60次
 ```
 ![week15-4](https://user-images.githubusercontent.com/71545492/120737472-b3bc0080-c520-11eb-8a57-264c56dffe22.png)
+
+```c
+import ddf.minim.*;
+ Minim minim;
+ AudioPlayer player;
+void setup(){
+  size(400,200);
+  minim = new Minim(this);
+  player = minim.loadFile("bell.mp3");
+}//把bell.mp3放進來
+void draw(){
+  background(51,114,191);
+}
+void mousePressed(){//2種:play(),stop()
+  if(player.isPlaying()){
+    player.pause();
+    player.rewind();
+  }
+  else{
+    player.play();
+  }
+}
+```
+![image](https://user-images.githubusercontent.com/71545492/120740077-157e6980-c525-11eb-87b5-75297866d4ed.png)
+
+
+```c
+
+```
