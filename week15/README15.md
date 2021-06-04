@@ -100,5 +100,14 @@ void mousePressed(){//2種:play(),stop()
 
 
 ```c
-
+function setup() {
+  createCanvas(400,200);
+  textSize(40);
+}
+function draw() {
+  background(41,109,207);
+  let s = second();
+  text(s,100,100);
+}
 ```
+![week15-6](https://user-images.githubusercontent.com/71545492/120741997-bae70c80-c528-11eb-9fce-6ed732142093.png)
