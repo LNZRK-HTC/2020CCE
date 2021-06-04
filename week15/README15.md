@@ -121,7 +121,27 @@ void mousePressed(){//2種:play(),stop()
 ```
 ![week15-5](https://user-images.githubusercontent.com/71545492/120742385-5e382180-c529-11eb-8b2a-1f51027a960e.png)
 
-
+```c
+import ddf.minim.*;
+ Minim minim;
+ AudioPlayer player;
+//tada.mp3檔,也可以拉進來這裡
+void setup(){
+  size(400,200);
+  minim = new Minim(this);
+  player = minim.loadFile("tada.mp3");
+}
+void draw(){
+  background(41,109,207);
+  int s = second();
+  //text(59-s,100,100);
+  text(9-s%10,100,100);
+  if(9-s%10 == 0 && !player.isPlaying()){
+    player.play();
+  }
+}//0秒的時候，if(第0秒&&沒有撥放)就play()
+```
+![week15-5-2](https://user-images.githubusercontent.com/71545492/120742510-93447400-c529-11eb-9725-c3eb9db6dee8.png)
 
 ```c
 function setup() {
