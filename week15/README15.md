@@ -14,6 +14,29 @@ void draw(){//畫圖,每秒60次
 ![week15-1](https://user-images.githubusercontent.com/71545492/120731773-dcd79380-c516-11eb-941b-1b9d1987abb9.png)
 
 ```c
+import ddf.minim.*;
+ Minim minim;
+ AudioPlayer player;
+//tada.mp3檔,也可以拉進來這裡
+void setup(){
+  size(400,200);
+  minim = new Minim(this);
+  player = minim.loadFile("tada.mp3");
+}
+void draw(){
+  background(41,109,207);
+  int s = second();
+  //text(59-s,100,100);
+  text(9-s%10,100,100);
+  if(9-s%10 == 0 && !player.isPlaying()){
+    player.play();
+  }
+}//0秒的時候，if(第0秒&&沒有撥放)就play()
+```
+![week15-5-2](https://user-images.githubusercontent.com/71545492/120742281-2df08300-c529-11eb-89db-db755b21100f.png)
+
+
+```c
 //秒數s:0,1,2...59
 //      59,58,57...0(幫手)59-s
 //============================
