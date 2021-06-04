@@ -155,3 +155,23 @@ function draw() {
 }
 ```
 ![week15-6](https://user-images.githubusercontent.com/71545492/120741997-bae70c80-c528-11eb-9fce-6ed732142093.png)
+
+```c
+function setup() {
+  createCanvas(400,200);
+  textSize(40);
+}
+function draw(){
+  let s = second();
+  if(s%2==0){
+    background(255,0,0);
+  }
+  else{
+    background(51,109,200);
+  }
+}
+```
+![week15-7-1](https://user-images.githubusercontent.com/71545492/120743505-bc660400-c52b-11eb-98c4-238ac6ae5747.png)
+![week15-7-2](https://user-images.githubusercontent.com/71545492/120743512-bff98b00-c52b-11eb-902b-2c939ad4944d.png)
+
+
