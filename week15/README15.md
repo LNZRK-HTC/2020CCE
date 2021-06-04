@@ -31,4 +31,5 @@ void draw(){//畫圖,每秒60次
 //原本:0,1,2,3,4,5,6,7,8,9
 //倒數:9,8,7,6,5,4,3,2,1,0
 ```
-![week15-2](https://user-images.githubusercontent.com/71545492/120733292-7607a980-c519-11eb-8ffc-ad7a98a7e8ee.png)
+![week15-2](https://user-images.githubusercontent.com/71545492/120733359-95063b80-c519-11eb-983e-9115142c74b1.png)
+
