@@ -119,7 +119,8 @@ void mousePressed(){//2種:play(),stop()
   }
 }
 ```
-![image](https://user-images.githubusercontent.com/71545492/120740077-157e6980-c525-11eb-87b5-75297866d4ed.png)
+![week15-5](https://user-images.githubusercontent.com/71545492/120742385-5e382180-c529-11eb-8b2a-1f51027a960e.png)
+
 
 
 ```c
