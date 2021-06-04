@@ -33,3 +33,43 @@ void draw(){//畫圖,每秒60次
 ```
 ![week15-2](https://user-images.githubusercontent.com/71545492/120733359-95063b80-c519-11eb-983e-9115142c74b1.png)
 
+```c
+//發出聲音，有點難，要用外掛Processing的sound
+//這裡叫PDE:Processing Developing Environment
+ import ddf.minim.*;
+ Minim minim;
+ AudioPlayer player;
+//tada.mp3檔,也可以拉進來這裡
+void setup(){
+  size(400,200);
+  minim = new Minim(this);
+  player = minim.loadFile("tada.mp3");
+}
+void draw(){
+  background(51,114,191);
+}
+void mousePressed(){
+  player.play();
+}
+```
+![WEEK15-3](https://user-images.githubusercontent.com/71545492/120737161-28426f80-c520-11eb-8775-e95caf53f296.png)
+
+```c
+import ddf.minim.*;
+ Minim minim;
+ AudioPlayer player;
+//tada.mp3檔,也可以拉進來這裡
+void setup(){
+  size(400,200);
+  minim = new Minim(this);
+  player = minim.loadFile("tada.mp3");
+}
+void draw(){
+  background(41,109,207);
+  int s = second();
+  //text(59-s,100,100);
+  text(9-s%10,100,100);
+  if(9-s%10 == 0)player.play();
+}//0秒的時候，if()會進去60次
+```
+![week15-4](https://user-images.githubusercontent.com/71545492/120737472-b3bc0080-c520-11eb-8a57-264c56dffe22.png)
