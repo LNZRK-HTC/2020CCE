@@ -9,7 +9,7 @@ void draw(){//畫,每秒60次
   ellipse(50,50,80,80);
 }
 ```
-![week16-1](https://user-images.githubusercontent.com/71545492/121619282-efb01200-ca9a-11eb-9a48-d7e1e441031b.png)
+![week16-1](https://user-images.githubusercontent.com/71545492/121619449-343bad80-ca9b-11eb-89df-f2f5b276f5d2.png)
 
 ```c
 void setup(){//設定，只做一次
