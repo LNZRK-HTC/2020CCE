@@ -26,3 +26,33 @@ void draw(){//畫,每秒60次
 }//  畫圓 圓心 寬 高
 ```
 ![week16-2](https://user-images.githubusercontent.com/71545492/121619293-f2126c00-ca9a-11eb-8c7a-2df59403346e.png)
+
+```c
+void setup(){
+  size(400,200);
+  fill(255,0,0);
+  textSize(40);
+}
+void draw(){
+  background(57,255,127);
+  arc(100,100,180,180,radians(90),radians(180));
+}
+```
+![week16-3](https://user-images.githubusercontent.com/71545492/121621781-6e0eb300-ca9f-11eb-9517-c7b5274e8783.png)
+
+```c
+void setup(){
+  size(400,200);
+  fill(255,0,0);
+  textSize(40);
+}
+float shift=0;
+void draw(){
+  background(57,255,127);
+  float start = radians(90+shift);
+  float stop = radians(180+shift);
+  arc(100,100,180,180,start,stop);
+  shift+=1;
+}
+```
+![week16-4](https://user-images.githubusercontent.com/71545492/121622985-77008400-caa1-11eb-8330-40ebd14ef9de.png)
