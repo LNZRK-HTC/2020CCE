@@ -77,5 +77,5 @@ void draw(){
   text(v,200,150);//印出轉動的速度
 }
 ```
-![week16-5](https://user-images.githubusercontent.com/71545492/121624277-d069b280-caa3-11eb-9ba5-b5c9467c5781.png)
+![week16-5](https://user-images.githubusercontent.com/71545492/121624435-1d4d8900-caa4-11eb-8e7f-76e606dff927.png)
 
