@@ -56,3 +56,26 @@ void draw(){
 }
 ```
 ![week16-4](https://user-images.githubusercontent.com/71545492/121622985-77008400-caa1-11eb-8330-40ebd14ef9de.png)
+
+```c
+void setup(){
+  size(400,200);
+  fill(255,0,0);
+  textSize(40);
+}
+float shift=0,v=10;//一開始速度10
+void draw(){
+  background(57,255,127);
+  float start = radians(90+shift);
+  float stop = radians(180+shift);
+  arc(100,100,180,180,start,stop);
+  if(v>0.0001){//還有速度時，就轉動
+    shift+=v;//轉動的速度
+    v = v * 0.99;//速度會慢慢減速
+  }
+  text(shift,200,100);//印出shift
+  text(v,200,150);//印出轉動的速度
+}
+```
+![week16-5](https://user-images.githubusercontent.com/71545492/121624277-d069b280-caa3-11eb-9ba5-b5c9467c5781.png)
+
