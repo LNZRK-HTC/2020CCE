@@ -82,7 +82,7 @@ String line="";
 String Q="hello";
 void draw(){//每秒60次
   background(0);
-  int len = line.length();
+  int len = line.length();text(len,100,50);
   text(len ,100 ,50);
   text("Q: "+Q,100,100);
   text("A:"+line,100,150);
@@ -94,4 +94,4 @@ void keyPressed(){
   if(key == BACKSPACE && len>0)line = line.substring(0,len-1);
 }
 ```
-![week17-5](https://user-images.githubusercontent.com/71545492/122500440-5eeeae80-d025-11eb-9918-91c0223c8de8.png)
+![week17-5](https://user-images.githubusercontent.com/71545492/122500592-aaa15800-d025-11eb-8c9a-10c39317350f.png)
