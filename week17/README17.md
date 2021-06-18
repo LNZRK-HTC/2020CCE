@@ -94,7 +94,7 @@ void keyPressed(){
   if(key == BACKSPACE && len>0)line = line.substring(0,len-1);
 }
 ```
-![week17-5](https://user-images.githubusercontent.com/71545492/122500592-aaa15800-d025-11eb-8c9a-10c39317350f.png)
+![week17-5-1](https://user-images.githubusercontent.com/71545492/122504273-8b59f900-d02c-11eb-807e-f0a7f900d988.png)
 
 ![week17-5-2](https://user-images.githubusercontent.com/71545492/122503612-5bf6bc80-d02b-11eb-95bd-9be132314552.png)
 
@@ -126,3 +126,34 @@ void keyPressed(){
 }
 ```
 ![week17-6](https://user-images.githubusercontent.com/71545492/122503550-3bc6fd80-d02b-11eb-98c7-8624472d768b.png)
+
+```c
+void setup(){//設定,只做一次
+  size(400,200);
+  textSize(40);
+}
+String line="";
+String []Q={"hello","world","other"};
+int Qi=0;//第幾個Q Q[Qi] Q[0] Q[1] Q[2]
+void draw(){//每秒60次1
+  background(0);
+  text("Score:"+score,100,50);
+  text("Q: "+Q[Qi],100,100);
+  text("A:"+line,100,150);
+}
+int score=0;
+void keyPressed(){
+  int len = line.length();
+  if(key>='a' && key<='z')line =line + key;
+  if(key>='A' && key<='Z')line =line + key;
+  if(key == BACKSPACE && len>0)line = line.substring(0,len-1);
+  if(key == ENTER){//算分數
+    if(line.equals(Q[Qi])==true){
+      score++;
+      Qi++;//換下一筆 Q[0]變Q[1]...
+      line = "";
+    }else score --;
+  }
+}//Q:算分數!!(陣列)更多的題目!!!亂數跳題!!!!
+```
+![week17-7](https://user-images.githubusercontent.com/71545492/122504299-9a40ab80-d02c-11eb-8f10-f1e4a8c03a30.png)
