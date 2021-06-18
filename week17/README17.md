@@ -1,14 +1,32 @@
 ## 第十七周正課
 
 ```c
-void setup(){
+void setup(){//設定,只做一次
   size(400,200);
   textSize(40);
 }
 String line="world";
-void draw(){
+void draw(){//每秒60次
   background(0);
   text("hello",100,100);
   text(line,100,150);
+}
+```
+
+
+```c
+void setup(){//設定,只做一次
+  size(400,200);
+  textSize(40);
+}
+String line="";
+String Q="world";
+void draw(){//每秒60次
+  background(0);
+  text("Q: "+Q,100,100);
+  text("You:"+line,100,150);
+}
+void mousePressed(){
+  line=line+"a";
 }
 ```
