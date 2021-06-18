@@ -21,7 +21,7 @@ void setup(){//設定,只做一次
   textSize(40);
 }
 String line="";
-String Q="world";
+String Q="hello";
 void draw(){//每秒60次
   background(0);
   text("Q: "+Q,100,100);
@@ -31,7 +31,7 @@ void mousePressed(){
   line=line+"a";
 }
 ```
-![week17-2](https://user-images.githubusercontent.com/71545492/122496761-dcfb8700-d01e-11eb-86ac-290721ecbf6e.png)
+![week17-2](https://user-images.githubusercontent.com/71545492/122501990-4f249980-d028-11eb-9bb1-259e9b7fe26b.png)
 
 
 ```c
