@@ -86,3 +86,4 @@ int main()
     printf("f : %d  num : %d\n",f,num);
 }
 ```
+![week18-4](https://user-images.githubusercontent.com/71545492/123366300-9079f380-d5aa-11eb-81de-3e20544de880.png)
