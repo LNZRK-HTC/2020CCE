@@ -1,0 +1,32 @@
+## 第十八周
+
+```c
+import processing.video.*;//開viedo外掛
+//裝好Processing Viedo Library就沒有紅色底線
+//import processing.sound.*;//以前教過聲音
+//import ddf.minim.*;//有些同學的聲音
+Capture cam;//視訊capture//global 全域變數
+//AudioPlayer player;//以前
+//Minim minim;//以前
+void setup(){//設定 只做一次
+  size(640,680);//視窗大小
+  println(Capture.list());
+}//會印出你電腦的全部視訊鏡頭
+```
+![week18-1](https://user-images.githubusercontent.com/71545492/123358082-6110ba00-d59d-11eb-8ed6-5eacfbf19f45.png)
+
+```c
+import processing.video.*;//開viedo外掛
+Capture cam;//視訊capture//global 全域變數
+void setup(){//設定 只做一次
+  size(640,680);//視窗大小
+  println(Capture.list());
+  cam = new Capture(this,"HD WebCam");//初始化
+  cam.start();//開啟webcam
+}
+void draw(){
+  if(cam.available())cam.read();//讀視訊
+  set(0,0,cam);
+}
+```
+![week18-2](https://user-images.githubusercontent.com/71545492/123358109-6bcb4f00-d59d-11eb-80d5-a697216ce482.png)
