@@ -87,3 +87,92 @@ int main()
 }
 ```
 ![week18-4](https://user-images.githubusercontent.com/71545492/123366300-9079f380-d5aa-11eb-81de-3e20544de880.png)
+
+```c
+String []face={"Spade","Heart","Dimand","Club"};
+String []Num={"A","2","3","4","5","6","7","8","9","10","J","Q","K"};
+void setup(){
+size(600,200);
+for(int i=0; i<52; i++){
+int f = i/13;
+int num = i%13+1;
+text(face[f]+num, num*40, 50+50*f);
+}
+}
+void drawCard(int i){
+int f = i/13, num = i%13;
+fill(255); rect(0,0,100,150);
+if( f==1 || f==2 ) fill(255,0,0);
+else fill(0);
+textAlign(CENTER,CENTER);
+textSize(20); text( face[f], 50,50);
+textSize(40); text( Num[num], 50, 100);
+}
+void draw(){
+drawCard( 13 );
+}
+```
+![week18-5](https://user-images.githubusercontent.com/71545492/123367612-d2a43480-d5ac-11eb-87d9-a79734e0fef5.png)
+
+```c
+String []face={"Spade","Heart","Dimand","Club"};
+String []Num={"A","2","3","4","5","6","7","8","9","10","J","Q","K"};
+void setup(){
+size(600,200);
+}
+void drawCard(int i){
+int f = i/13, num = i%13;
+fill(255); rect(0,0,100,150);
+if( f==1 || f==2 ) fill(255,0,0);
+else fill(0);
+textAlign(CENTER,CENTER);
+textSize(20); text( face[f], 50,50);
+textSize(40); text( Num[num], 50, 100);
+}
+int nowCard=41;
+void draw(){
+drawCard( nowCard );
+}
+void mousePressed(){
+nowCard = int(random(52));
+}
+```
+![week18-6](https://user-images.githubusercontent.com/71545492/123367677-f23b5d00-d5ac-11eb-8137-b40727b328fc.png)
+
+```c
+String []face={"Spade","Heart","Dimand","Club"};
+String []Num={"A","2","3","4","5","6","7","8","9","10","J","Q","K"};
+int []Card=new int[52];
+void setup(){
+size(600,200);
+for(int i=0; i<52; i++) Card[i] = i;
+shuffleCard();
+}
+void shuffleCard(){
+for(int i=0; i<20000; i++){//洗牌洗20000次
+int a = int(random(52));
+int b = int(random(52));
+int temp = Card[a];
+Card[a] = Card[b];
+Card[b] = temp;
+}
+}
+void drawCard(int i, int x, int y){
+int f = i/13, num = i%13;
+fill(255); rect(x,y, 100,150);
+if( f==1 || f==2 ) fill(255,0,0);
+else fill(0);
+textAlign(CENTER,CENTER);
+textSize(20); text( face[f], x+50,y+50);
+textSize(40); text( Num[num], x+50, y+100);
+}
+void draw(){
+for(int i=0; i<5; i++){
+drawCard( Card[i], i*110, 0 );
+}
+}
+void mousePressed(){
+shuffleCard();
+}
+```
+![week18-7](https://user-images.githubusercontent.com/71545492/123367802-2d3d9080-d5ad-11eb-9513-406706b3fe2d.png)
